@@ -8,6 +8,7 @@ $common-text: 20px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 1px solid black;
 }
 @mixin display-center-column(){
     display: flex;
