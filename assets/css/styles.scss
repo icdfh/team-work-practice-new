@@ -1,0 +1,59 @@
+$bg-black: black;
+$headline: 64px;
+$headline-2: 48px;
+$headline-3: 32px;
+$headline-4: 24px;
+$common-text: 20px;
+@mixin img-size(){
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+@mixin display-center-column(){
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+}
+@mixin display-center-row(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin container(){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+body{
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+.container{
+    height: 100vh;
+    padding: 20px;
+    @include display-center-column;
+}
+header{
+    background-color: $bg-black;
+    @include display-center-row;
+    padding: 15px;
+    width: 100%;
+    
+
+    nav{
+        display: flex;
+        gap: 30px;
+        
+        a{
+            text-decoration: none;
+            font-size: $common-text;
+
+           
+        }
+    }
+}

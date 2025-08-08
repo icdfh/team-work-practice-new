@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  gap: 30px;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */
